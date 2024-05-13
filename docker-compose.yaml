@@ -1,0 +1,32 @@
+version: '3.8'
+
+
+services:
+
+  formare:
+    image: ion21/new-api-formare:latest
+
+    network_mode: "host"
+    environment:
+      #      MYSQL_ROOT_PASSWORD: 'root'
+      URL1: jdbc:mysql://192.168.0.112:3306/
+      PASS1: R@0t
+      USER1: root
+      SPRING_PROFILES_ACTIVE: test
+    ports:
+      - "8080:8080"
+
+#  client:
+#    image: ion21/client-service:07.05.2024.11.11.15
+#    networks:
+#      - mynet
+#    ports:
+#      - "3000:3000"
+#    environment:
+#      - NODE_ENV=development
+#      - REACT_APP_PATH_TO=development
+#      - REACT_APP_API_URL=http://34.247.255.42:5000
+#
+#    depends_on:
+#      - edge
+
