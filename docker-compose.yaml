@@ -4,7 +4,7 @@ version: '3.8'
 services:
 
   formare:
-    image: ion21/new-api-formare:latest
+    image: ion21/new-api-formare:14.05.2024.07.02.57
 
     network_mode: "host"
     environment:
