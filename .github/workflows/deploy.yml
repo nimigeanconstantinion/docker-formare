@@ -40,4 +40,4 @@ jobs:
             echo 'Deployment completed successfully.'"
         env:
           NOIP_SSH_PRIVATE_KEY: ${{ secrets.NOIP_SSH_PRIVATE_KEY }}
-          NOIP_INSTANCE_IP: codeplus.ddns.net
+          NOIP_INSTANCE_IP: 78.96.25.131
