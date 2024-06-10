@@ -12,5 +12,5 @@ services:
       PASS1: R@0t
       USER1: root
 #      SPRING_PROFILES_ACTIVE: test
-    ports:
-      - "8080:8080"
+#    ports:
+#      - "8080:8080"
