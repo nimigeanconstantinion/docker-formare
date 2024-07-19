@@ -4,7 +4,7 @@ version: '3.8'
 services:
 
   formare:
-    image: ion21/new-formare-service:19.07.2024.08.13.33
+    image: ion21/new-formare-service:19.07.2024.08.33.41
     network_mode: "host"
     environment:
       #      MYSQL_ROOT_PASSWORD: 'root'
