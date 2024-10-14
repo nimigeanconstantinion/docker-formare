@@ -6,7 +6,7 @@ networks:
 services:
 
   formare:
-    image: ion21/new-formare-service:latest
+    image: ion21/new-formare-service:14.10.2024.06.03.33
     networks:
       - apinet
     extra_hosts:
