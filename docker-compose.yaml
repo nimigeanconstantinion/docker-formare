@@ -1,0 +1,28 @@
+networks:
+  apinet:
+    driver: bridge
+
+
+services:
+
+  formare:
+    image: ion21/new-formare-service:latest
+    networks:
+      - apinet
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    ports:
+      - "5000:5000"
+    environment:
+      #      MYSQL_ROOT_PASSWORD: 'root'
+      URL1: jdbc:mysql://host.docker.internal:3306/
+      PASS1: R@0t
+      USER1: root
+      ALLOWED_ORIGINS: 'http://78.96.25.131:3000'
+
+  client:
+    image: ion21/client-formare-profesionala:latest
+    networks:
+      - apinet
+    ports:
+      - "3000:3000"
