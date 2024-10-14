@@ -18,7 +18,7 @@ services:
       URL1: jdbc:mysql://host.docker.internal:3306/
       PASS1: R@0t
       USER1: root
-      ALLOWED_ORIGINS: 'http://78.96.25.131:3000'
+      ALLOWED_ORIGINS: 'http://78.96.25.131:3000,http://icode.mywire.org:3000'
 
   client:
     image: ion21/client-formare-profesionala:latest
